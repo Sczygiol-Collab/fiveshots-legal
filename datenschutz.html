@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung — Fiveshots</title>
+    <title>Datenschutzerklärung — FiveShots</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; background: #fafafa; }
         h1 { color: #1a1a1a; border-bottom: 2px solid #BE185D; padding-bottom: 10px; }
@@ -32,8 +32,8 @@
 </p>
 
 <h2>2. Überblick</h2>
-<p>Fiveshots ist eine App zur anonymen Bewertung von Fotos. Nutzer laden eigene Bilder hoch, die von anderen Nutzern in anonymen Paarvergleichen bewertet werden. Diese Datenschutzerklärung informiert dich darüber, welche Daten wir erheben, warum und wie lange wir sie speichern.</p>
-<p>Fiveshots richtet sich <strong>ausschließlich an volljährige Personen ab 18 Jahren</strong>.</p>
+<p>FiveShots ist eine App zur anonymen Bewertung von Fotos. Nutzer laden eigene Bilder hoch, die von anderen Nutzern in anonymen Paarvergleichen bewertet werden. Diese Datenschutzerklärung informiert dich darüber, welche Daten wir erheben, warum und wie lange wir sie speichern.</p>
+<p>FiveShots richtet sich <strong>ausschließlich an volljährige Personen ab 18 Jahren</strong>.</p>
 
 <h2>3. Welche Daten wir erheben</h2>
 
@@ -42,7 +42,9 @@
     <li><strong>E-Mail-Adresse und Passwort</strong> — für dein Benutzerkonto (über Firebase Authentication)</li>
     <li><strong>Geburtsjahr und -monat</strong> — zur Altersprüfung (18+) und Zielgruppensteuerung</li>
     <li><strong>Geschlecht</strong> — zur Zielgruppensteuerung der Bewertungen</li>
-    <li><strong>Stadt</strong> — für die optionale Anonymitätsfunktion („Bewerter aus meiner Stadt ausschließen")</li>
+    <li><strong>Region</strong> — Bundesland, Österreich, Schweiz oder „International". Sie dient der
+        optionalen Anonymitätsfunktion („Bewerter aus meiner Region ausschließen") und der
+        Gruppen-Auswertung. Wir fragen bewusst <strong>keine Stadt und keine Adresse</strong> ab.</li>
 </ul>
 
 <h3>3.2 Besondere Kategorie: sexuelle Orientierung</h3>
@@ -83,10 +85,30 @@
     <li>Fotos werden bei Google Firebase Cloud Storage gespeichert.</li>
     <li>Standortangaben und andere Metadaten der Bilddatei werden beim Hochladen
         <strong>automatisch entfernt</strong> (die Bilder werden neu berechnet).</li>
-    <li>Fotos werden spätestens nach <strong>14 Tagen</strong> automatisch gelöscht.</li>
     <li>Andere Nutzer sehen deine Fotos <strong>ohne</strong> Namen, Profil oder sonstige Angaben zu dir.</li>
     <li>Von jedem Bild wird ein technischer Prüfwert (Hash) gespeichert, um Mehrfach-Uploads
         desselben Bildes in verschiedenen Kategorien zu erkennen.</li>
+    <li><strong>Automatische Inhaltsprüfung:</strong> Vor der Freigabe können Fotos an
+        <strong>Google Cloud Vision (SafeSearch)</strong> übermittelt werden, um pornografische oder
+        gewaltverherrlichende Inhalte zu erkennen. Abgelehnte Uploads werden sofort und vollständig
+        gelöscht.</li>
+    <li><strong>Erstmaliger Upload:</strong> Deine ersten Fotos werden vor der Freigabe von bis zu drei
+        erfahrenen Nutzern oder vom Betreiber gesichtet („Tribunal"). Auch dabei sehen die Prüfenden
+        keinen Namen und kein Profil.</li>
+</ul>
+
+<h3>3.4.1 Wie lange deine Fotos gespeichert bleiben</h3>
+<ul>
+    <li>Deine Fotos bleiben gespeichert, <strong>solange die zugehörige Session besteht</strong> — damit
+        du deine Auswertung jederzeit wieder ansehen kannst.</li>
+    <li>Ist eine Session abgeschlossen oder abgebrochen, werden deine Fotos <strong>keinen weiteren
+        Bewertern mehr angezeigt</strong>.</li>
+    <li>Eine Session, die nach <strong>14 Tagen</strong> nicht abgeschlossen ist, wird automatisch
+        beendet; nicht gelieferte Bewertungen werden dir als Guthaben erstattet.</li>
+    <li>Du kannst <strong>jede Session jederzeit selbst endgültig löschen</strong> — dabei werden die
+        zugehörigen Fotos unwiderruflich vom Server entfernt
+        (Auswertung öffnen → „Session endgültig löschen").</li>
+    <li>Beim <strong>Löschen deines Kontos</strong> werden alle deine Fotos entfernt.</li>
 </ul>
 
 <h3>3.5 Nutzungsdaten</h3>
@@ -112,8 +134,9 @@
     <li><strong>Geräte-Kennung (gehasht)</strong> — ein nicht umkehrbarer Prüfwert (SHA-256) deiner
         Android-Geräte-ID. Wir nutzen ihn, um Mehrfachkonten und Missbrauch bei Werbebelohnungen zu
         erkennen. Die ursprüngliche Geräte-ID speichern wir nicht.</li>
-    <li><strong>Stadt-Historie</strong> — änderst du deine Stadt, bleibt die vorherige Angabe 60 Tage
-        gespeichert, damit die Stadt-Sperre nicht umgangen werden kann.</li>
+    <li><strong>Regions-Historie</strong> — änderst du deine Region, bleibt die vorherige Angabe 60 Tage
+        gespeichert, damit die Regions-Sperre nicht umgangen werden kann. Ein Wechsel ist höchstens
+        alle 15 Tage möglich.</li>
     <li><strong>Push-Kennung (FCM-Token)</strong> — nur wenn du Benachrichtigungen erlaubst</li>
     <li><strong>Firebase Analytics und Crashlytics</strong> — anonymisierte Nutzungsstatistiken und
         Absturzberichte zur Fehlerbehebung</li>
@@ -133,10 +156,13 @@
 
 <h2>5. Drittanbieter</h2>
 
-<h3>5.1 Firebase (Google Ireland Limited / Google LLC)</h3>
+<h3>5.1 Firebase und Google Cloud (Google Ireland Limited / Google LLC)</h3>
 <p>Wir nutzen Firebase für Anmeldung, Datenbank, Dateispeicher, Serverfunktionen, Benachrichtigungen,
-   Analytics und Absturzberichte. Eine Verarbeitung in den USA ist möglich; es gelten die
-   EU-Standardvertragsklauseln.<br>
+   Analytics und Absturzberichte sowie Google Cloud Vision für die automatische Inhaltsprüfung
+   hochgeladener Fotos. Unsere Serverfunktionen laufen in einem Rechenzentrum in den
+   <strong>Vereinigten Staaten</strong>; eine Verarbeitung dort findet also regelmäßig statt. Es gelten
+   die EU-Standardvertragsklauseln; Google ist zudem nach dem EU-US Data Privacy Framework
+   zertifiziert.<br>
    <a href="https://firebase.google.com/support/privacy">Datenschutz bei Firebase</a></p>
 
 <h3>5.2 RevenueCat</h3>
@@ -153,10 +179,11 @@
 <h2>6. Speicherdauer</h2>
 <table>
     <tr><th>Daten</th><th>Aufbewahrung</th></tr>
-    <tr><td>Fotos</td><td>maximal 14 Tage, dann automatische Löschung</td></tr>
+    <tr><td>Fotos</td><td>solange die Session besteht; jederzeit selbst löschbar, spätestens bei Konto-Löschung</td></tr>
+    <tr><td>Unfertige Session</td><td>wird nach 14 Tagen automatisch beendet (mit Guthaben-Erstattung)</td></tr>
     <tr><td>Verdiente Kredite</td><td>Verfall nach 45 Tagen</td></tr>
     <tr><td>Bewertungsverlauf</td><td>30 Tage</td></tr>
-    <tr><td>Vorherige Stadt</td><td>60 Tage</td></tr>
+    <tr><td>Vorherige Region</td><td>60 Tage</td></tr>
     <tr><td>Konto- und Profildaten</td><td>bis zur Löschung deines Kontos</td></tr>
     <tr><td>Kaufbelege</td><td>nach gesetzlichen Aufbewahrungsfristen</td></tr>
 </table>
@@ -180,12 +207,12 @@
     <li>Serverseitige Zugriffsregeln — Nutzer können nur ihre eigenen Daten lesen</li>
     <li>Gehashte Geräte-Kennungen (SHA-256)</li>
     <li>Entfernen von Bild-Metadaten beim Hochladen</li>
-    <li>Schutz vor Bildschirmaufnahmen innerhalb der App</li>
-    <li>Automatische Löschung nach den oben genannten Fristen</li>
+    <li>Schutz vor Bildschirmaufnahmen innerhalb der App (Android)</li>
+    <li>Automatische Löschung nach den in Abschnitt 6 genannten Fristen</li>
 </ul>
 
 <h2>9. Minderjährige</h2>
-<p>Fiveshots richtet sich ausschließlich an Personen ab 18 Jahren. Das Alter wird bei der Registrierung
+<p>FiveShots richtet sich ausschließlich an Personen ab 18 Jahren. Das Alter wird bei der Registrierung
    abgefragt und zusätzlich serverseitig geprüft. Wir erheben wissentlich keine Daten von Personen unter
    18 Jahren; entsprechende Konten werden gelöscht.</p>
 
