@@ -21,7 +21,7 @@
 <body>
 
 <h1>Datenschutzerklärung</h1>
-<p class="update">Stand: September 2026</p>
+<p class="update">Stand: November 2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>
@@ -61,14 +61,14 @@
         (z. B. „Homosexuelle Bewerter wählten zu 71 % Bild 2") und ist bewusst
         <strong>nicht mit anderen Merkmalen kombinierbar</strong> — dadurch lassen sich keine
         Rückschlüsse auf einzelne Personen ziehen.</li>
-    <li>Gruppen mit weniger als <strong>3 Bewertungen</strong> werden gar nicht angezeigt.</li>
+    <li>Gruppen mit weniger als <strong>30 Bewertungen</strong> werden gar nicht angezeigt.</li>
     <li>Sie wird <strong>niemals</strong> einem einzelnen Nutzer zugeordnet oder anderen angezeigt.</li>
     <li>Du kannst die Einwilligung jederzeit widerrufen, indem du dein Konto löschst oder uns
         kontaktierst.</li>
 </ul>
 
 <h3>3.3 Freiwillige Profilangaben</h3>
-<p>Diese Angaben sind freiwillig. Sie ermöglichen dir detailliertere Auswertungen und bringen dir jeweils Kredit-Guthaben ein:</p>
+<p>Diese Angaben sind freiwillig. Sie ermöglichen dir detailliertere Auswertungen und bringen dir beim ersten Ausfüllen jeweils Credits ein:</p>
 <ul>
     <li><strong>Persönlichkeit:</strong> Energietyp, Entscheidungstyp, Beziehungsstatus, Sternzeichen,
         „Was du gerade suchst" (im Bereich Dating)</li>
@@ -88,13 +88,15 @@
     <li>Andere Nutzer sehen deine Fotos <strong>ohne</strong> Namen, Profil oder sonstige Angaben zu dir.</li>
     <li>Von jedem Bild wird ein technischer Prüfwert (Hash) gespeichert, um Mehrfach-Uploads
         desselben Bildes in verschiedenen Kategorien zu erkennen.</li>
-    <li><strong>Automatische Inhaltsprüfung:</strong> Vor der Freigabe können Fotos an
-        <strong>Google Cloud Vision (SafeSearch)</strong> übermittelt werden, um pornografische oder
-        gewaltverherrlichende Inhalte zu erkennen. Abgelehnte Uploads werden sofort und vollständig
+    <li><strong>Automatische Inhaltsprüfung:</strong> Vor der Freigabe werden Fotos an
+        <strong>Google Cloud Vision (SafeSearch)</strong> übermittelt, um pornografische oder
+        gewaltverherrlichende Inhalte zu erkennen. Das gilt immer für deinen ersten Upload; bei
+        erfahrenen Nutzern mit hohem Vertrauenswert kann die Prüfung entfallen. Google erhält dabei nur
+        die Bilddatei, keine Angaben zu deiner Person. Abgelehnte Uploads werden sofort und vollständig
         gelöscht.</li>
-    <li><strong>Erstmaliger Upload:</strong> Deine ersten Fotos werden vor der Freigabe von bis zu drei
-        erfahrenen Nutzern oder vom Betreiber gesichtet („Tribunal"). Auch dabei sehen die Prüfenden
-        keinen Namen und kein Profil.</li>
+    <li><strong>Erstmaliger Upload:</strong> Deine ersten Fotos werden vor der Freigabe zusätzlich von
+        bis zu drei erfahrenen Nutzern oder vom Betreiber gesichtet („Tribunal"). Auch dabei sehen die
+        Prüfenden keinen Namen und kein Profil.</li>
 </ul>
 
 <h3>3.4.1 Wie lange deine Fotos gespeichert bleiben</h3>
@@ -115,7 +117,7 @@
 <ul>
     <li><strong>Bewertungen</strong> — welches Bild du gewählt hast und wie lange du dafür gebraucht hast
         (zur Erkennung automatisierter Falscheingaben)</li>
-    <li><strong>Kredite, Erfahrungspunkte, Stufe, Vertrauenswert, Serien, Abzeichen</strong> — dein Fortschritt</li>
+    <li><strong>Credits, Erfahrungspunkte, Stufe, Vertrauenswert, Serien, Abzeichen</strong> — dein Fortschritt</li>
     <li><strong>Bewertungsverlauf</strong> — welche Bildpaare du bereits gesehen hast (damit sie sich nicht wiederholen)</li>
     <li><strong>Meldungen</strong> — wenn du Inhalte meldest, speichern wir Grund und Zeitpunkt</li>
     <li><strong>Blockierungen</strong> — wenn du jemanden blockierst, wird das beidseitig gespeichert</li>
@@ -138,10 +140,28 @@
         gespeichert, damit die Regions-Sperre nicht umgangen werden kann. Ein Wechsel ist höchstens
         alle 15 Tage möglich.</li>
     <li><strong>Push-Kennung (FCM-Token)</strong> — nur wenn du Benachrichtigungen erlaubst</li>
-    <li><strong>Firebase Analytics und Crashlytics</strong> — anonymisierte Nutzungsstatistiken und
-        Absturzberichte zur Fehlerbehebung</li>
+    <li><strong>Firebase Analytics und Crashlytics</strong> — pseudonymisierte Nutzungsstatistiken
+        (z. B. welche Bereiche der App genutzt werden) und Absturzberichte zur Fehlerbehebung. Sie sind
+        mit einer zufälligen Konto-Kennung verknüpft, nicht mit deinem Namen oder deiner E-Mail-Adresse.</li>
     <li><strong>Werbe-ID</strong> — für Werbeanzeigen, siehe Abschnitt 5.3</li>
 </ul>
+
+<h3>3.8 Feedback und E-Mail-Kontakt</h3>
+<p>
+    Schreibst du uns — etwa über „Feedback senden" in den Einstellungen —, verarbeiten wir deine
+    E-Mail-Adresse und den Inhalt deiner Nachricht, um sie zu beantworten und die App zu verbessern.
+    Die App fügt der Nachricht die App-Version und deine Konto-Kennung bei, damit wir Fehler deinem
+    Konto zuordnen können; beides kannst du vor dem Absenden löschen. Nachrichten löschen wir, sobald
+    sie erledigt sind, spätestens nach 12 Monaten.
+</p>
+
+<h3>3.9 Beispielfotos</h3>
+<p>
+    Solange erst wenige echte Uploads auf Bewertungen warten, zeigt die App beim Bewerten auch
+    Beispielfotos. Diese sind als „Beispielfotos" gekennzeichnet und stammen nicht von Nutzerinnen
+    oder Nutzern der App. Deine Bewertungen dieser Fotos werden genauso gespeichert wie andere
+    Bewertungen.
+</p>
 
 <h2>4. Rechtsgrundlagen</h2>
 <ul>
@@ -151,7 +171,8 @@
         Push-Benachrichtigungen, personalisierte Werbung</li>
     <li><strong>Ausdrückliche Einwilligung (Art. 9 Abs. 2 lit. a DSGVO)</strong> — sexuelle Orientierung</li>
     <li><strong>Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)</strong> — Missbrauchs- und
-        Betrugsprävention, Sicherheit der App, Moderation von Inhalten</li>
+        Betrugsprävention, Sicherheit der App, Moderation von Inhalten, Fehlerbehebung und
+        Verbesserung der App (Analytics, Absturzberichte), Beantwortung von Anfragen</li>
 </ul>
 
 <h2>5. Drittanbieter</h2>
@@ -167,13 +188,16 @@
 
 <h3>5.2 RevenueCat</h3>
 <p>Für die Abwicklung von In-App-Käufen. RevenueCat erhält Kaufinformationen und eine Kennung deines
-   Kontos — <strong>keine Zahlungsdaten</strong>. Diese verarbeitet ausschließlich Google Play.<br>
+   Kontos — <strong>keine Zahlungsdaten</strong>. Diese verarbeitet ausschließlich Google Play.
+   RevenueCat, Inc. sitzt in den <strong>Vereinigten Staaten</strong>; die Verarbeitung dort erfolgt
+   auf Grundlage des Auftragsverarbeitungsvertrags (Data Processing Addendum) von RevenueCat.<br>
    <a href="https://www.revenuecat.com/privacy">Datenschutz bei RevenueCat</a></p>
 
 <h3>5.3 Google AdMob</h3>
-<p>Für Belohnungsvideos (freiwillig ansehbar, um Kredite zu erhalten). AdMob kann die Werbe-ID deines
+<p>Für Belohnungsvideos (freiwillig ansehbar, um Credits zu erhalten). AdMob kann die Werbe-ID deines
    Geräts und Nutzungsdaten verarbeiten. Vor der ersten Anzeige fragen wir deine Einwilligung ab; du
-   kannst sie in den App-Einstellungen unter „Werbe-Einstellungen" jederzeit ändern oder widerrufen.<br>
+   kannst sie in den App-Einstellungen unter „Werbe-Einstellungen" jederzeit ändern oder widerrufen.
+   Auch hierbei kann eine Übermittlung an Google LLC in den Vereinigten Staaten stattfinden (siehe 5.1).<br>
    <a href="https://policies.google.com/privacy">Datenschutz bei Google</a></p>
 
 <h2>6. Speicherdauer</h2>
@@ -181,7 +205,7 @@
     <tr><th>Daten</th><th>Aufbewahrung</th></tr>
     <tr><td>Fotos</td><td>solange die Session besteht; jederzeit selbst löschbar, spätestens bei Konto-Löschung</td></tr>
     <tr><td>Unfertige Session</td><td>wird nach 14 Tagen automatisch beendet (mit Guthaben-Erstattung)</td></tr>
-    <tr><td>Verdiente Kredite</td><td>Verfall nach 45 Tagen</td></tr>
+    <tr><td>Verdiente Credits</td><td>Verfall nach 45 Tagen (gekaufte Credits verfallen nicht)</td></tr>
     <tr><td>Bewertungsverlauf</td><td>30 Tage</td></tr>
     <tr><td>Vorherige Region</td><td>60 Tage</td></tr>
     <tr><td>Konto- und Profildaten</td><td>bis zur Löschung deines Kontos</td></tr>
@@ -191,13 +215,15 @@
 <h2>7. Deine Rechte</h2>
 <p>Dir stehen nach der DSGVO folgende Rechte zu: Auskunft, Berichtigung, Löschung, Einschränkung der
    Verarbeitung, Datenübertragbarkeit, Widerspruch sowie der jederzeitige Widerruf erteilter
-   Einwilligungen. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.</p>
+   Einwilligungen. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren —
+   zuständig für uns ist die Berliner Beauftragte für Datenschutz und Informationsfreiheit.</p>
 
 <h3>Konto löschen</h3>
 <p>Du kannst dein Konto jederzeit selbst löschen: <strong>Profil → Einstellungen → Konto löschen</strong>.
-   Dabei werden Profil, Fotos, Kredite, Abzeichen, Einladungscode und Sessions unwiderruflich gelöscht.
-   Deine abgegebenen Bewertungen bleiben in anonymisierter Form erhalten, damit die Ergebnisse anderer
-   Nutzer nicht verfälscht werden — ein Rückschluss auf dich ist dann nicht mehr möglich.</p>
+   Dabei werden Profil, Fotos, Credits, Abzeichen, Einladungscode und Sessions unwiderruflich gelöscht.
+   Deine abgegebenen Bewertungen (nur: welches Bild gewählt wurde) bleiben erhalten, damit die
+   Ergebnisse anderer Nutzer nicht verfälscht werden. Sie sind danach keinem bestehenden Konto mehr
+   zugeordnet — ein Rückschluss auf dich ist nicht mehr möglich.</p>
 <p>Ohne App-Zugriff geht es auch per E-Mail:
    <a href="https://sczygiol-collab.github.io/fiveshots-legal/konto-loeschen.html">Anleitung zur Konto-Löschung</a></p>
 
@@ -222,7 +248,14 @@
 
 <h2>11. Kontakt</h2>
 <p>Bei Fragen zum Datenschutz:<br>
-   E-Mail: paul.sczygiol@googlemail.com</p>
+   E-Mail: <a href="mailto:paul.sczygiol@googlemail.com">paul.sczygiol@googlemail.com</a></p>
+
+<p style="font-size:0.9em;margin-top:40px;color:#666;">
+    <a href="index.html">Startseite</a> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a> ·
+    <a href="konto-loeschen.html">Konto löschen</a>
+</p>
 
 </body>
 </html>
